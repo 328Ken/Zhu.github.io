@@ -1,0 +1,182 @@
+/* 基础样式 */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+}
+
+/* 全屏背景图 */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg3.jpg');
+    background-size: cover;
+    background-position:center;
+    z-index: -1;
+    filter: brightness(0.7);
+}
+
+/* 仿浏览器盒子 */
+.browser-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
+    height: 60vh;
+    min-width: 1000px;
+    background-color: rgba(20, 20, 20, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.5),
+                0 0 60px rgba(0, 255, 255, 0.3);
+    overflow: hidden;
+    border: 1px solid #444;
+}
+
+/* 浏览器工具栏 */
+.browser-bar {
+    height: 40px;
+    background: linear-gradient(to bottom, #333, #222);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 1px solid #000;
+}
+
+.browser-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.browser-url {
+    flex-grow: 1;
+    margin: 0 15px;
+    height: 24px;
+    background-color: #111;
+    border-radius: 4px;
+    color: #aaa;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-family: monospace;
+    border: 1px solid #000;
+}
+
+/* 内容区调整为相对定位 */
+.content-area {
+    position: relative;
+    padding: 0;
+    height: calc(60vh - 40px);
+    overflow: hidden;
+}
+
+/* 角落导航样式 */
+.corner-nav {
+    position: absolute;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.corner-nav:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.top-left {
+    top: 20px;
+    left: 20px;
+    border-color: #ff00ff;
+}
+
+.top-right {
+    top: 20px;
+    right: 20px;
+    border-color: #00ffff;
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+    border-color: #ffff00;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+    border-color: #ff00ff;
+}
+
+/* 中央3D旋转区域 */
+/* 中央3D旋转区域 */
+.center-3d {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.rotating-element {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate-3d 15s infinite linear;
+}
+
+/* 立方体面的通用样式 */
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+/* 图片样式 */
+.face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 各面位置变换 */
+.front { transform: translateZ(150px); }
+.back { transform: rotateY(180deg) translateZ(150px); }
+.left { transform: rotateY(-90deg) translateZ(150px); }
+.right { transform: rotateY(90deg) translateZ(150px); }
+.top { transform: rotateX(90deg) translateZ(150px); }
+.bottom { transform: rotateX(-90deg) translateZ(150px); }
+
+@keyframes rotate-3d {
+    from { transform: rotateX(0deg) rotateY(0deg); }
+    to { transform: rotateX(360deg) rotateY(360deg); }
+}

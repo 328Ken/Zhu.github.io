@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC | 视觉系音乐档案</title>
+    <link rel="stylesheet" href="./css/music-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 主布局容器 -->
+    <div class="music-layout">
+        <!-- 侧边导航 -->
+        <aside class="music-sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-headphones"></i> 音乐分类</h2>
+            </div>
+
+            <nav class="genre-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fas fa-fire"></i>
+                            <span>经典视觉系</span>
+                            <span class="count">128</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-skull"></i>
+                            <span>哥特视觉系</span>
+                            <span class="count">76</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-ribbon"></i>
+                            <span>优雅视觉系</span>
+                            <span class="count">54</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-moon"></i>
+                            <span>黑暗视觉系</span>
+                            <span class="count">89</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                            <span>可爱视觉系</span>
+                            <span class="count">42</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-ghost"></i>
+                            <span>极端视觉系</span>
+                            <span class="count">65</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-playlists">
+                <h3><i class="fas fa-list"></i> 我的歌单</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-music"></i>
+                            <span>最爱收藏</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                            <span>近期最爱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-clock"></i>
+                            <span>90年代经典</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                            <span>新建歌单</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="current-track">
+                    <div class="track-info">
+                        <h4>Kurenai</h4>
+                        <p>X JAPAN</p>
+                    </div>
+                    <div class="track-controls">
+                        <button><i class="fas fa-step-backward"></i></button>
+                        <button><i class="fas fa-pause"></i></button>
+                        <button><i class="fas fa-step-forward"></i></button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="music-main">
+            <!-- 顶部导航 -->
+            <nav class="music-top-nav">
+                <!-- 添加返回Home的链接 -->
+                <div class="nav-left">
+                    <a href="home.html" class="home-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <div class="search-box">
+                        <input type="text" placeholder="搜索视觉系音乐...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="user-menu">
+                    <span class="username">视觉系乐迷</span>
+                    <img src="./images/sbg1.jpg" alt="用户头像">
+                </div>
+            </nav>
+
+            <!-- 内容区 -->
+            <div class="music-content">
+                <!-- 特色专辑区 -->
+                <section class="featured-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-star"></i> 本月推荐专辑</h2>
+                        <a href="#" class="view-all">查看全部 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class="album-grid">
+                        <div class="album-card">
+                            <div class="album-cover" style="background-image: url('./images/视觉系1.jpg')">
+                                <div class="play-btn"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="album-info">
+                                <h3>BLUE BLOOD</h3>
+                                <p>X JAPAN</p>
+                                <div class="album-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 1989</span>
+                                    <span><i class="fas fa-music"></i> 12首</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="album-card">
+                            <div class="album-cover" style="background-image: url('./images/M.jpg')">
+                                <div class="play-btn"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="album-info">
+                                <h3>Merveilles</h3>
+                                <p>Malice Mizer</p>
+                                <div class="album-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 1998</span>
+                                    <span><i class="fas fa-music"></i> 10首</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="album-card">
+                            <div class="album-cover" style="background-image: url('./images/D.jpg')">
+                                <div class="play-btn"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="album-info">
+                                <h3>GAUZE</h3>
+                                <p>DIR EN GREY</p>
+                                <div class="album-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 1999</span>
+                                    <span><i class="fas fa-music"></i> 13首</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="album-card">
+                            <div class="album-cover" style="background-image: url('./images/人.jpg')">
+                                <div class="play-btn"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="album-info">
+                                <h3>Visual Kei</h3>
+                                <p>Various Artists</p>
+                                <div class="album-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 2020</span>
+                                    <span><i class="fas fa-music"></i> 15首</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 热门歌曲 -->
+                <section class="tracks-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-chart-line"></i> 热门歌曲</h2>
+                        <div class="sort-options">
+                            <button class="active">热门</button>
+                            <button>最新</button>
+                            <button>经典</button>
+                        </div>
+                    </div>
+
+                    <div class="track-list">
+                        <div class="track-header">
+                            <span>#</span>
+                            <span>歌曲</span>
+                            <span>乐队</span>
+                            <span>专辑</span>
+                            <span><i class="far fa-clock"></i></span>
+                        </div>
+
+                        <div class="track-item">
+                            <span class="track-number">1</span>
+                            <div class="track-info">
+                                <div class="track-cover" style="background-image: url('./images/视觉系2.jpg')"></div>
+                                <div class="track-details">
+                                    <h4>Kurenai</h4>
+                                    <p>X JAPAN</p>
+                                </div>
+                            </div>
+                            <span class="track-album">BLUE BLOOD</span>
+                            <span class="track-duration">5:47</span>
+                            <button class="track-play"><i class="fas fa-play"></i></button>
+                        </div>
+
+                        <div class="track-item">
+                            <span class="track-number">2</span>
+                            <div class="track-info">
+                                <div class="track-cover" style="background-image: url('./images/视觉系3.jpg')"></div>
+                                <div class="track-details">
+                                    <h4>Au Revoir</h4>
+                                    <p>Malice Mizer</p>
+                                </div>
+                            </div>
+                            <span class="track-album">Merveilles</span>
+                            <span class="track-duration">4:38</span>
+                            <button class="track-play"><i class="fas fa-play"></i></button>
+                        </div>
+
+                        <div class="track-item">
+                            <span class="track-number">3</span>
+                            <div class="track-info">
+                                <div class="track-cover" style="background-image: url('./images/视觉系4.jpg')"></div>
+                                <div class="track-details">
+                                    <h4>Cage</h4>
+                                    <p>DIR EN GREY</p>
+                                </div>
+                            </div>
+                            <span class="track-album">GAUZE</span>
+                            <span class="track-duration">4:25</span>
+                            <button class="track-play"><i class="fas fa-play"></i></button>
+                        </div>
+
+                        <!-- 更多歌曲... -->
+                    </div>
+                </section>
+
+                <!-- 乐队推荐 -->
+                <section class="artists-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-users"></i> 乐队推荐</h2>
+                        <a href="#" class="view-all">查看全部 <i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class="artist-grid">
+                        <div class="artist-card">
+                            <div class="artist-image" style="background-image: url('./images/X.jpg')"></div>
+                            <div class="artist-info">
+                                <h3>X JAPAN</h3>
+                                <p>视觉系开创者</p>
+                                <span class="fans-count"><i class="fas fa-users"></i> 1.2M</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image" style="background-image: url('./images/M2.jpg')"></div>
+                            <div class="artist-info">
+                                <h3>Malice Mizer</h3>
+                                <p>哥特视觉系代表</p>
+                                <span class="fans-count"><i class="fas fa-users"></i> 890K</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image" style="background-image: url('./images/D2.jpg')"></div>
+                            <div class="artist-info">
+                                <h3>DIR EN GREY</h3>
+                                <p>极端视觉系</p>
+                                <span class="fans-count"><i class="fas fa-users"></i> 1.5M</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image" style="background-image: url('./images/G.jpg')"></div>
+                            <div class="artist-info">
+                                <h3>Versailles</h3>
+                                <p>新古典视觉系</p>
+                                <span class="fans-count"><i class="fas fa-users"></i> 750K</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- 音乐播放器 -->
+    <div class="music-player">
+        <div class="player-track-info">
+            <div class="track-cover" style="background-image: url('../images/album1.jpg')"></div>
+            <div class="track-details">
+                <h4>Kurenai</h4>
+                <p>X JAPAN</p>
+            </div>
+            <button class="like-btn"><i class="far fa-heart"></i></button>
+        </div>
+
+        <div class="player-controls">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                    <div class="progress-handle"></div>
+                </div>
+                <div class="time-info">
+                    <span>2:34</span>
+                    <span>5:47</span>
+                </div>
+            </div>
+
+            <div class="control-buttons">
+                <button><i class="fas fa-random"></i></button>
+                <button><i class="fas fa-step-backward"></i></button>
+                <button class="play-btn"><i class="fas fa-pause"></i></button>
+                <button><i class="fas fa-step-forward"></i></button>
+                <button><i class="fas fa-redo"></i></button>
+            </div>
+        </div>
+
+        <div class="player-extra">
+            <button><i class="fas fa-list"></i></button>
+            <div class="volume-control">
+                <i class="fas fa-volume-up"></i>
+                <input type="range" min="0" max="100" value="80">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
