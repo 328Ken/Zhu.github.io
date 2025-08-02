@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视觉系空间</title>
+    <link rel="stylesheet" href="./css/home-styles.css">
+</head>
+<body>
+    <!-- 全屏背景图 -->
+    <div class="background"></div>
+    
+    <!-- 仿网页的长方形盒子 -->
+    <div class="browser-box">
+        <!-- 仿浏览器工具栏 -->
+        <div class="browser-bar">
+            <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <div class="browser-url">https://yawenhua.com/</div>
+        </div>
+        
+
+         <div class="content-area">
+        <!-- 四个角落的导航项 -->
+        <a href="about.html" class="corner-nav top-left">ABOUT</a>
+        <a href="music.html" class="corner-nav top-right">MUSIC</a>
+        <a href="street-art.html" class="corner-nav bottom-left">Street Art</a>
+        <a href="collage.html" class="corner-nav bottom-right">Collage</a>
+        
+        <!-- 中央3D旋转容器 -->
+        <div class="center-3d">
+    <div class="rotating-element">
+        <!-- 立方体的六个面，每个面放不同图片 -->
+        <div class="front face">
+            <img src="./images/bg4.jpg" alt="艺术1">
+        </div>
+        <div class="back face">
+            <img src="./images/bg4.jpg" alt="艺术2">
+        </div>
+        <div class="left face">
+            <img src="./images/bg4.jpg" alt="艺术3">
+        </div>
+        <div class="right face">
+            <img src="./images/bg4.jpg" alt="艺术4">
+        </div>
+        <div class="top face">
+            <img src="./images/bg4.jpg" alt="艺术5">
+        </div>
+        <div class="bottom face">
+            <img src="./images/bg4.jpg" alt="艺术6">
+        </div>
+    </div>
+</div>
+    </div>
+        
+    </div>
+
+    <script src="home-script.js"></script>
+</body>
+</html>
